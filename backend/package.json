@@ -1,0 +1,9 @@
+{
+  "name": "annales-concours-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API locale pour la plateforme AnnalesConcours Senegal",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

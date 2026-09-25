@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" role="img" aria-label="Drapeau du Senegal">
+  <defs>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="7" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="13"/></filter>
+  </defs>
+  <g filter="url(#rough)">
+    <path fill="#17863a" d="M55 240h220v290H55c-22-17-35-33-17-49-21-16-13-29 10-42-25-14-24-29 2-43-24-15-20-29 9-41-22-19-17-33 8-44-20-20-13-39 18-48-12-17-5-27-30-31z"/>
+    <path fill="#f3df00" d="M270 240h230v290H270z"/>
+    <path fill="#e30613" d="M500 240h213c-28 13-34 25-6 38-37 10-42 24-10 38-36 11-39 26-8 42-35 10-35 25-4 42-30 12-27 27 2 44-28 10-20 28 12 42-22 13-18 28 12 44-22 13-6 27 18 37H500z"/>
+    <path fill="#17863a" d="M384 328l19 58h61l-49 36 19 59-50-36-50 36 19-59-49-36h61z"/>
+  </g>
+</svg>

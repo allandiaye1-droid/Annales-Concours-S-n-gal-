@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102a43">
+  <title>Jàng & Réussir — Annales de concours du Sénégal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#accueil" aria-label="AnnalesConcours Sénégal, accueil"><img class="logo-flag-image" src="image/flag-senegal.svg" alt="Drapeau du Sénégal"><span><strong>Annales<span>Concours</span></strong><small>SÉNÉGAL</small></span></a>
+    <nav class="desktop-nav" id="desktopNav" aria-label="Navigation principale"><a class="active" href="#accueil">Accueil</a><a href="#concours">Concours <small>⌄</small></a><a href="#bibliotheque">Annales <small>⌄</small></a><a href="#apropos">À propos</a></nav>
+    <div class="header-actions"><button class="language" id="languageButton"><span class="senegal-flag tiny-flag"><i></i></span> FR <small>⌄</small></button><button class="login" id="loginButton">Connexion</button><button class="signup" id="registerButton">Créer un compte</button><button class="mobile-menu" id="mobileMenu" aria-label="Ouvrir le menu">☰</button></div>
+  </header>
+
+  <main id="accueil">
+    <section class="landing-hero">
+      <div class="hero-content">
+        <div class="official-pill"><span>pille</span> PLATEFORME OFFICIELLE DES SUJETS DE CONCOURS AU SÉNÉGAL</div>
+        <h1>Préparez <em>votre réussite</em> aux concours d'État au Sénégal</h1>
+        <p>Accédez à une collection authentique d'annales corrigées pour l'ENA, la Magistrature, la Douane, le BTS, et bien d'autres. Votre avenir se dessine ici.</p>
+        <div class="hero-actions"><a class="blue-button" href="#bibliotheque">⌕ &nbsp; Explorer les concours <span>→</span></a><button class="demo-button" id="focusSearch">● &nbsp; Voir la démo</button></div>
+        <div class="featured-scroll" id="concours"><button id="featurePrev" aria-label="Concours précédent">‹</button><a href="#bibliotheque"><span class="mini-cover ena">ENA</span><strong>ENA</strong></a><a href="#bibliotheque"><span class="mini-cover magistrature">✚</span><strong>Magistrature</strong></a><a href="#bibliotheque"><span class="mini-cover douane">◈</span><strong>Douane</strong></a><a href="#bibliotheque"><span class="mini-cover bts">RTS</span><strong>BTS</strong></a><button id="featureNext" aria-label="Concours suivant">›</button></div>
+      </div>
+      <div class="hero-visual"><div class="three-d-scene education-scene" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="open-book"><i></i><i></i><i></i><i></i><b></b></span><span class="pencil"><i></i><b></b></span></div><img src="image/WhatsApp Image 2026-09-24 at 14.45.36.jpeg" alt="Étudiante sénégalaise préparant un concours"></div>
+    </section>
+
+    <section class="benefits" aria-label="Les avantages de la plateforme"><article><span class="benefit-icon flag-medallion"><span class="senegal-flag"><i></i></span></span><div><strong>Annales authentiques</strong><p>Des sujets réels des années précédentes.</p></div></article><article><span class="benefit-icon flag-medallion"><span class="senegal-flag"><i></i></span></span><div><strong>Tous les concours</strong><p>De l'ENA au BTS, en passant par la Douane, la Magistrature...</p></div></article><article><span class="benefit-icon flag-medallion"><span class="senegal-flag"><i></i></span></span><div><strong>Sujets corrigés</strong><p>Des explications claires et détaillées.</p></div></article><article><span class="benefit-icon flag-medallion"><span class="senegal-flag"><i></i></span></span><div><strong>Accès 24/7</strong><p>Étudiez à votre rythme, où que vous soyez.</p></div></article></section>
+
+    <section class="library-section" id="bibliotheque">
+      <div class="section-heading"><div><p class="eyebrow">BIBLIOTHÈQUE NUMÉRIQUE</p><h2>Les concours les plus recherchés</h2></div><button class="text-button" id="showAll">Voir toutes les annales <span>→</span></button></div>
+      <div class="library-toolbar"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Rechercher un concours, une filière..." aria-label="Rechercher dans la bibliothèque"></label><div class="filter-pills" id="categoryFilters"><button class="filter-pill active" data-category="Tous">Tous <span>23</span></button><button class="filter-pill" data-category="Administration">Administration</button><button class="filter-pill" data-category="Défense & sécurité">Défense & sécurité</button><button class="filter-pill" data-category="Technique & gestion">Technique & gestion</button></div><button class="cart-button" id="openCart">Panier <b id="cartCount">0</b></button></div>
+      <div class="product-grid" id="productGrid"></div><div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>Aucune annale trouvée</h3><p>Essayez une autre recherche ou catégorie.</p></div>
+    </section>
+    <footer class="footer"><span>© 2026 AnnalesConcours Sénégal</span><span>Votre réussite, notre mission.</span><a href="#aide">Support</a></footer>
+  </main>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Votre panier" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">SÉLECTION</span><h2>Votre panier</h2></div><button class="close-button" id="closeCart" aria-label="Fermer le panier">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="cart-empty"><div class="cart-empty-icon flag-medallion"><span class="senegal-flag"><i></i></span></div><h3>Votre panier est vide</h3><p>Ajoutez une annale pour commencer votre préparation.</p></div></div>
+    <div class="cart-footer"><div class="total-row"><span>Total</span><strong id="cartTotal">0 F CFA</strong></div><button class="checkout-button" id="checkoutButton" disabled>Passer au paiement <span>→</span></button><p class="secure-note">⌁ Paiement sécurisé par Wave ou Orange Money</p></div>
+  </aside>
+  <div class="modal-backdrop" id="authModal" hidden><section class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle"><button class="close-button" id="closeAuth" aria-label="Fermer">×</button><span class="senegal-flag modal-flag"><i></i></span><p class="eyebrow" id="authEyebrow">ESPACE CANDIDAT</p><h2 id="authTitle">Créer un compte</h2><p id="authCopy">Retrouvez vos annales et vos achats sur tous vos appareils.</p><form id="authForm"><div class="name-fields"><label>Prénom<input type="text" id="authFirstName" required autocomplete="given-name" placeholder="Votre prénom"></label><label>Nom<input type="text" id="authLastName" required autocomplete="family-name" placeholder="Votre nom"></label></div><label>Adresse e-mail<input type="email" id="authEmail" required autocomplete="email" placeholder="vous@exemple.sn"></label><label>Mot de passe<input type="password" id="authPassword" required minlength="8" autocomplete="new-password" placeholder="8 caractères minimum"></label><button class="blue-button" type="submit" id="authSubmit">Créer mon compte <span>→</span></button></form><button class="forgot-password" id="forgotPassword">Mot de passe oublié ?</button><button class="auth-switch" id="authSwitch">J'ai déjà un compte</button></section></div>
+  <div class="modal-backdrop" id="resetModal" hidden><section class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="resetTitle"><button class="close-button" id="closeReset" aria-label="Fermer">×</button><span class="senegal-flag modal-flag"><i></i></span><p class="eyebrow">RÉCUPÉRATION</p><h2 id="resetTitle">Réinitialiser le mot de passe</h2><p>Recevez les instructions de récupération sur votre adresse e-mail.</p><form id="resetForm"><label>Adresse e-mail<input type="email" id="resetEmail" required placeholder="vous@exemple.sn"></label><button class="blue-button" type="submit">Envoyer le lien <span>→</span></button></form><button class="auth-switch" id="backToLogin">Retour à la connexion</button></section></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
