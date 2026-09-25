@@ -83,7 +83,7 @@ const server = http.createServer(async (request, response) => {
     if (request.url === '/api/health' && request.method === 'GET') return sendJson(response, 200, { status: 'ok', service: 'annales-concours' });
     if (request.url === '/api/db-test' && request.method === 'GET') {
       try {
-        const data = await supabaseRequest('annales?select=id&limit=1');
+        const data = await supabaseRequest('annales?select=id');
         return sendJson(response, 200, { connected: true, rows_available: data.length });
       } catch (error) {
         return sendJson(response, 503, { connected: false, error: 'Supabase non configure ou inaccessible. Ajoutez SUPABASE_SERVICE_ROLE_KEY dans backend/.env.' });
